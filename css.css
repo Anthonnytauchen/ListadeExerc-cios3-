@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.container-principal{
+ display: flex;
+ min-height: 100vh;
+ justify-content: center;
+ align-items: center;
+}
+.galeria{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 2rem;
+}
+@media(max-width: 768px){
+    .galeria{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 480px){
+    .galeria{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
